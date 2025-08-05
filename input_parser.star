@@ -319,10 +319,10 @@ DEFAULT_ROLLUP_ARGS = {
     "erigon_strict_mode": True,
     # Set to true to use an L1 ERC20 contract as the gas token on the rollup.
     # The address of the gas token will be determined by the value of `gas_token_address`.
-    "gas_token_enabled": False,
+    "gas_token_enabled": True,
     # The address of the L1 ERC20 contract that will be used as the gas token on the rollup.
     # If the address is empty, a contract will be deployed automatically.
-    "gas_token_address": constants.ZERO_ADDRESS,
+    "gas_token_address": "0xc197fb8a1EAa3cE845E14e52D419F5125f41814E",
     # The gas token origin network, to be used in BridgeL2SovereignChain.sol
     "gas_token_network": 0,
     # The sovereign WETH address, to be used in BridgeL2SovereignChain.sol
