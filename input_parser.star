@@ -12,7 +12,7 @@ DEFAULT_DEPLOYMENT_STAGES = {
     # Deploy agglayer contracts on L1 (as well as fund accounts).
     # Set to false to use pre-deployed agglayer contracts.
     # Note that it will require a few additional parameters.
-    "deploy_agglayer_contracts_on_l1": True,
+    "deploy_agglayer_contracts_on_l1": False,
     # Deploy databases.
     "deploy_databases": True,
     # Deploy CDK central/trusted environment.
@@ -22,7 +22,7 @@ DEFAULT_DEPLOYMENT_STAGES = {
     # Deploy CDK bridge UI.
     "deploy_cdk_bridge_ui": False,
     # Deploy the agglayer.
-    "deploy_agglayer": True,
+    "deploy_agglayer": False,
     # Deploy cdk-erigon node.
     # TODO: Remove this parameter to incorporate cdk-erigon inside the central environment.
     "deploy_cdk_erigon_node": True,
