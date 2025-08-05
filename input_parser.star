@@ -250,7 +250,7 @@ DEFAULT_L1_ARGS = {
     # Default: 12
     "l1_seconds_per_slot": 2,
     # The amount of ETH sent to the admin, sequence, aggregator, sequencer and other chosen addresses.
-    "l1_funding_amount": "1000000ether",
+    "l1_funding_amount": "0.05ether",
     # Default: 2
     "l1_participants_count": 1,
     # Whether to deploy https://github.com/AggLayer/lxly-bridge-and-call
