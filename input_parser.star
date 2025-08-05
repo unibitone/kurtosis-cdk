@@ -8,7 +8,7 @@ DEFAULT_DEPLOYMENT_STAGES = {
     # Deploy a local L1 chain using the ethereum-package.
     # Set to false to use an external L1 like Sepolia.
     # Note that it will require a few additional parameters.
-    "deploy_l1": True,
+    "deploy_l1": False,
     # Deploy agglayer contracts on L1 (as well as fund accounts).
     # Set to false to use pre-deployed agglayer contracts.
     # Note that it will require a few additional parameters.
@@ -197,20 +197,20 @@ DEFAULT_L1_ARGS = {
     # The L1 engine to use, either "geth" or "anvil".
     "l1_engine": "geth",
     # The L1 network identifier.
-    "l1_chain_id": 271828,
+    "l1_chain_id": 11155111,
     # Custom L1 genesis
     "l1_custom_genesis": False,
     # This mnemonic will:
     # a) be used to create keystores for all the types of validators that we have, and
     # b) be used to generate a CL genesis.ssz that has the children validator keys already
     # preregistered as validators
-    "l1_preallocated_mnemonic": "giant issue aisle success illegal bike spike question tent bar rely arctic volcano long crawl hungry vocal artwork sniff fantasy very lucky have athlete",
+    "l1_preallocated_mnemonic": "foil stage exotic equip exclude student paddle system client april ordinary trouble",
     # cast wallet private-key --mnemonic $l1_preallocated_mnemonic
-    "l1_preallocated_private_key": "0xbcdf20249abf0ed6d944c0288fad489e33f66b3960d9e6229c1cd214ed3bbe31",
+    "l1_preallocated_private_key": "0x05627ddc3bcdfafc95cb97386003edf74711d67ddc0396288c3a344c25805e98",
     # The L1 HTTP RPC endpoint.
-    "l1_rpc_url": "http://el-1-geth-lighthouse:8545",
+    "l1_rpc_url": "https://sepolia.infura.io/v3/25cd361b825548aea65604292ef6948f",
     # The L1 WS RPC endpoint.
-    "l1_ws_url": "ws://el-1-geth-lighthouse:8546",
+    "l1_ws_url": "wss://sepolia.infura.io/ws/v3/25cd361b825548aea65604292ef6948f",
     # The L1 consensus layer RPC endpoint.
     "l1_beacon_url": "http://cl-1-lighthouse-geth:4000",
     # The additional services to spin up.
