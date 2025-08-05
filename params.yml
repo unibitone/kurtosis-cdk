@@ -1,0 +1,10 @@
+# L1 configuration
+l1_network_id: 11155111
+l1_preallocated_mnemonic: foil stage exotic equip exclude student paddle system client april ordinary trouble
+l1_rpc_url: https://sepolia.infura.io/v3/25cd361b825548aea65604292ef6948f
+l1_ws_url: wss://sepolia.infura.io/ws/v3/25cd361b825548aea65604292ef6948f
+l1_funding_amount: 0.05ether
+ethereum_explorer: "https://sepolia.etherscan.io/"
+
+zkevm_use_gas_token_contract: true
+gasTokenAddress: "0xc197fb8a1EAa3cE845E14e52D419F5125f41814E"

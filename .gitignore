@@ -16,7 +16,7 @@ node_modules/
 **/.DS_Store
 *.iml
 temp_dir/
-params.yml
+# params.yml
 
 # prod values
 *secret*
