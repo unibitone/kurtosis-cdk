@@ -14,7 +14,7 @@ DEFAULT_DEPLOYMENT_STAGES = {
     # Note that it will require a few additional parameters.
     "deploy_agglayer_contracts_on_l1": False,
     # Deploy databases.
-    "deploy_databases": True,
+    "deploy_databases": False,
     # Deploy CDK central/trusted environment.
     "deploy_cdk_central_environment": True,
     # Deploy CDK bridge infrastructure.
