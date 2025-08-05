@@ -8,13 +8,13 @@ DEFAULT_DEPLOYMENT_STAGES = {
     # Deploy a local L1 chain using the ethereum-package.
     # Set to false to use an external L1 like Sepolia.
     # Note that it will require a few additional parameters.
-    "deploy_l1": False,
+    "deploy_l1": True,
     # Deploy agglayer contracts on L1 (as well as fund accounts).
     # Set to false to use pre-deployed agglayer contracts.
     # Note that it will require a few additional parameters.
-    "deploy_agglayer_contracts_on_l1": False,
+    "deploy_agglayer_contracts_on_l1": True,
     # Deploy databases.
-    "deploy_databases": False,
+    "deploy_databases": True,
     # Deploy CDK central/trusted environment.
     "deploy_cdk_central_environment": True,
     # Deploy CDK bridge infrastructure.
@@ -22,7 +22,7 @@ DEFAULT_DEPLOYMENT_STAGES = {
     # Deploy CDK bridge UI.
     "deploy_cdk_bridge_ui": False,
     # Deploy the agglayer.
-    "deploy_agglayer": False,
+    "deploy_agglayer": True,
     # Deploy cdk-erigon node.
     # TODO: Remove this parameter to incorporate cdk-erigon inside the central environment.
     "deploy_cdk_erigon_node": True,
