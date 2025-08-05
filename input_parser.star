@@ -153,44 +153,44 @@ DEFAULT_STATIC_PORTS = {
 # polycli wallet inspect --mnemonic 'lab code glass agree maid neutral vessel horror deny frequent favorite soft gate galaxy proof vintage once figure diary virtual scissors marble shrug drop' --addresses 13 | tee keys.txt | jq -r '.Addresses[] | [.ETHAddress, .HexPrivateKey] | @tsv' | awk 'BEGIN{split("sequencer,aggregator,claimtxmanager,timelock,admin,loadtest,agglayer,dac,proofsigner,l1testing,aggoracle,sovereignadmin,claimsponsor",roles,",")} {print "# " roles[NR] "\n\"zkevm_l2_" roles[NR] "_address\": \"" $1 "\","; print "\"zkevm_l2_" roles[NR] "_private_key\": \"0x" $2 "\",\n"}'
 DEFAULT_ACCOUNTS = {
     # sequencer
-    "zkevm_l2_sequencer_address": "0x5b06837A43bdC3dD9F114558DAf4B26ed49842Ed",
-    "zkevm_l2_sequencer_private_key": "0x183c492d0ba156041a7f31a1b188958a7a22eebadca741a7fe64436092dc3181",
+    "zkevm_l2_sequencer_address": "0xed301df1366fD2FAef70b6fA3D9c0E248a134CEF",
+    "zkevm_l2_sequencer_private_key": "0xa5561c236a1167903d0af2ab343a84c96b9abaff0575a5588ef0fcd8ca351e87",
     # aggregator
-    "zkevm_l2_aggregator_address": "0xCae5b68Ff783594bDe1b93cdE627c741722c4D4d",
-    "zkevm_l2_aggregator_private_key": "0x2857ca0e7748448f3a50469f7ffe55cde7299d5696aedd72cfe18a06fb856970",
+    "zkevm_l2_aggregator_address": "0x8e086fEca8A29D72E20e4Ee4D989799900c5A141",
+    "zkevm_l2_aggregator_private_key": "0x556afc514cc1e3d27e29607229a831438c4ea8996713071b090c8835124852f7",
     # claimtxmanager
-    "zkevm_l2_claimtxmanager_address": "0x5f5dB0D4D58310F53713eF4Df80ba6717868A9f8",
-    "zkevm_l2_claimtxmanager_private_key": "0x8d5c9ecd4ba2a195db3777c8412f8e3370ae9adffac222a54a84e116c7f8b934",
+    "zkevm_l2_claimtxmanager_address": "0x6d9e78f8848146bd613341C5b00eaC071cFf3E4D",
+    "zkevm_l2_claimtxmanager_private_key": "0x08905d36be70abd0379e3cf07ded2ee9f98c4dd2504868f4f9e492fe5b42a780",
     # timelock
-    "zkevm_l2_timelock_address": "0x130aA39Aa80407BD251c3d274d161ca302c52B7A",
-    "zkevm_l2_timelock_private_key": "0x80051baf5a0a749296b9dcdb4a38a264d2eea6d43edcf012d20b5560708cf45f",
+    "zkevm_l2_timelock_address": "0xbA6Fb89e83280209b0Eb4D1Aa3A597b3f25d39fc",
+    "zkevm_l2_timelock_private_key": "0x4c228cf0a12c57a6dfa49f9a5055941f3429635f7c8b7b0da966290965930e05",
     # admin
-    "zkevm_l2_admin_address": "0xE34aaF64b29273B7D567FCFc40544c014EEe9970",
-    "zkevm_l2_admin_private_key": "0x12d7de8621a77640c9241b2595ba78ce443d05e94090365ab3bb5e19df82c625",
+    "zkevm_l2_admin_address": "0xb2689374ff0F6Dd8c005D009dF093Fdd4e0b974c",
+    "zkevm_l2_admin_private_key": "0xcc1a62cd4f67fd2e43bf7d8bb67349c7fd95ddb8d489f23bea5442d9e3d107ee",
     # loadtest
-    "zkevm_l2_loadtest_address": "0x81457240ff5b49CaF176885ED07e3E7BFbE9Fb81",
-    "zkevm_l2_loadtest_private_key": "0xd7df6d64c569ffdfe7c56e6b34e7a2bdc7b7583db74512a9ffe26fe07faaa5de",
+    "zkevm_l2_loadtest_address": "0xcBE51FE6064a10057611247B87a1fF064bF6aac6",
+    "zkevm_l2_loadtest_private_key": "0x4fa50114206ba5826aa6e308aa4074e728e399b2e29f02a2f4b9a351e1cb0e0c",
     # agglayer
-    "zkevm_l2_agglayer_address": "0x351e560852ee001d5D19b5912a269F849f59479a",
-    "zkevm_l2_agglayer_private_key": "0x1d45f90c0a9814d8b8af968fa0677dab2a8ff0266f33b136e560fe420858a419",
+    "zkevm_l2_agglayer_address": "0xF2cdcbBD2f96580d5A15e820586Fba160c44BA56",
+    "zkevm_l2_agglayer_private_key": "0x284b9f8479b67aa1ee97fcb7632651bd6fba261ecf09c0498caf25c1188b448a",
     # dac
-    "zkevm_l2_dac_address": "0x5951F5b2604c9B42E478d5e2B2437F44073eF9A6",
-    "zkevm_l2_dac_private_key": "0x85d836ee6ea6f48bae27b31535e6fc2eefe056f2276b9353aafb294277d8159b",
+    "zkevm_l2_dac_address": "0x3C0DaE95d9f4f1564897bCc3C763de887AAa3ee3",
+    "zkevm_l2_dac_private_key": "0xd48eaa16668be1d78d34d836fc44d07d2469673d48502833ff5e37ec4e9b0fd9",
     # proofsigner
-    "zkevm_l2_proofsigner_address": "0x7569cc70950726784c8D3bB256F48e43259Cb445",
-    "zkevm_l2_proofsigner_private_key": "0x77254a70a02223acebf84b6ed8afddff9d3203e31ad219b2bf900f4780cf9b51",
+    "zkevm_l2_proofsigner_address": "0x55738be67c20f37738d4AD854FfF78839cc693BA",
+    "zkevm_l2_proofsigner_private_key": "0x8862ac4a159edeb7f90274f17038a3600b6208a0e4464f2cdaa54540962efa41",
     # l1testing
-    "zkevm_l2_l1testing_address": "0xfa291C5f54E4669aF59c6cE1447Dc0b3371EF046",
-    "zkevm_l2_l1testing_private_key": "0x1324200455e437cd9d9dc4aa61c702f06fb5bc495dc8ad94ae1504107a216b59",
+    "zkevm_l2_l1testing_address": "0x3b0e4651e723650981dfE02661bec074C8FC3CA6",
+    "zkevm_l2_l1testing_private_key": "0x7620d3d720244cfc10e3c3e7ae7f283f93e67824edc698f2b1ffb753db8e0348",
     # aggoracle
-    "zkevm_l2_aggoracle_address": "0x0b68058E5b2592b1f472AdFe106305295A332A7C",
-    "zkevm_l2_aggoracle_private_key": "0x6d1d3ef5765cf34176d42276edd7a479ed5dc8dbf35182dfdb12e8aafe0a4919",
+    "zkevm_l2_aggoracle_address": "0x4B05eeB6edCA5D4a2615a1cabEc2Fc0902b1c5dd",
+    "zkevm_l2_aggoracle_private_key": "0x2d3db0247f74d8bfbdc8c4d0eda92d8f69fc1e0865796ae2c5c6ffa006042101",
     # sovereignadmin
-    "zkevm_l2_sovereignadmin_address": "0xc653eCD4AC5153a3700Fb13442Bcf00A691cca16",
-    "zkevm_l2_sovereignadmin_private_key": "0xa574853f4757bfdcbb59b03635324463750b27e16df897f3d00dc6bef2997ae0",
+    "zkevm_l2_sovereignadmin_address": "0xf14311eB9bcFBa779F450ef96Ab77143A4639caB",
+    "zkevm_l2_sovereignadmin_private_key": "0x9f97d7e6bb4d8084e596f6b8f554537a00b8b87a96709e30761dd69f8422b44a",
     # claimsponsor
-    "zkevm_l2_claimsponsor_address": "0x635243A11B41072264Df6c9186e3f473402F94e9",
-    "zkevm_l2_claimsponsor_private_key": "0x986b325f6f855236b0b04582a19fe0301eeecb343d0f660c61805299dbf250eb",
+    "zkevm_l2_claimsponsor_address": "0x5ac7cD7092B57356c5c3B9210412DBc5eb374b66",
+    "zkevm_l2_claimsponsor_private_key": "0x2bea6a69f0d2c4f5b085e9596ab063eec77d4ba173c9ebea43ee66531a5b1e89",
 }
 
 DEFAULT_L1_ARGS = {
